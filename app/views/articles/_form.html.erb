@@ -1,0 +1,7 @@
+<%= form_for(@article) do |f| %>
+  <label>Title</label>
+  <%= f.text_field :title %><br>
+  <label>Content</label>
+  <%= f.text_area :content, data: { editor: 'markdown' }, rows: 10 %>
+  <%= f.submit %>
+<% end %>
